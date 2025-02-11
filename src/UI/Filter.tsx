@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Column } from "@tanstack/react-table";
 import { InputHTMLAttributes, useEffect, useMemo, useState } from "react";
 import { cn } from "../lib/cn";
@@ -36,7 +37,8 @@ function DebouncedInput({
 }
 
 function Filter({ column }: { column: Column<any, unknown> }) {
-  const { filterVariant } = column.columnDef.meta ?? {};
+  const { filterVariant }: { filterVariant?: string } =
+    column.columnDef.meta ?? {};
 
   const columnFilterValue = column.getFilterValue();
 
