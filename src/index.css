@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+/* ANIMATE SCALE */
+.animate_scale {
+  animation: animate-scale 0.7s ease-out backwards;
+}
+
+@keyframes animate-scale {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

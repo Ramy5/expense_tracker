@@ -55,7 +55,7 @@ const ExpenseForm: React.FC<ExpenseFormProps> = ({
     >
       <div
         className={cn(
-          "bg-white p-6 rounded-lg shadow-lg w-[94%] md:w-[85%] lg:w-1/2"
+          "bg-white p-6 rounded-lg shadow-lg w-[94%] animate_scale md:w-[85%] lg:w-1/2"
         )}
       >
         <h2 className={cn("text-lg font-bold mb-4")}>
